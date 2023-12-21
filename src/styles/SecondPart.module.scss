@@ -1,0 +1,34 @@
+@import "./Theme.scss";
+
+.SecondPart {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 20px 100px;
+
+  .Stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .Main {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.179em;
+
+    span {
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 1.179em;
+      color: $primary;
+    }
+  }
+
+  .Sub {
+    color: $grey;
+    font-weight: 500;
+    line-height: 1.111em;
+  }
+}
