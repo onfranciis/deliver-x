@@ -1,0 +1,109 @@
+@import "./Theme.scss";
+
+.FifthPart {
+  display: flex;
+  justify-content: space-between;
+  align-content: stretch;
+  gap: 28px;
+  padding: 30px 80px 100px;
+  position: relative;
+
+  .Left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: flex-start;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 150px;
+
+    .About {
+      color: $primary;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .Our {
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 1.161em;
+    }
+
+    .Sed {
+      color: $grey;
+      line-height: 1.667em;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .Download {
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $primary;
+      border: none;
+      color: white;
+      padding: 18px 24px;
+      transition: background-color 0.3s;
+      font-weight: bold;
+
+      &:hover {
+        background-color: #df4b2d;
+      }
+    }
+  }
+
+  .Right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                               FIFTH PART CARD                              */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.FifthPartCard {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  filter: drop-shadow(0 0 5px gray);
+  border-radius: 24px;
+  padding: 60px 53px;
+
+  .About {
+    color: $primary;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  .Our {
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 1.161em;
+    font-size: 24px;
+  }
+
+  .Sed {
+    color: $grey;
+    line-height: 1.667em;
+  }
+}
