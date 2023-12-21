@@ -1,0 +1,53 @@
+@import "./Theme.scss";
+
+.EightPart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #cacaca;
+  padding-top: 70px;
+  padding-bottom: 83px;
+
+  .Left {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .Logo {
+      height: auto;
+      width: 160px;
+      aspect-ratio: 10/3;
+    }
+
+    p {
+      color: $grey;
+      line-height: 1.667em;
+    }
+  }
+
+  .Links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  button {
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 24px;
+    background-color: $primary;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #df4b2d;
+    }
+  }
+}
