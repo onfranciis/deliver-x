@@ -4,6 +4,7 @@ import NavBar from "@/components/navbar/NavBar";
 import FirstPart from "@/components/firstpart/FirstPart";
 import SecondPart from "@/components/secondpart/SecondPart";
 import ThirdPart from "@/components/thirdpart/ThirdPart";
+import FourthPart from "@/components/fourthpart/FourthPart";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <FirstPart />
         <SecondPart />
         <ThirdPart />
+        <FourthPart />
       </div>
     </main>
   );
