@@ -4,8 +4,8 @@ import styles from "@/styles/NavBar.module.scss";
 
 const NavBar = () => {
   return (
-    <nav className={styles.NavBar}>
-      <div>
+    <div className={styles.Parent}>
+      <nav className={styles.NavBar}>
         <Image
           src="/logo.svg"
           alt=""
@@ -42,8 +42,8 @@ const NavBar = () => {
             </Link>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 };
 

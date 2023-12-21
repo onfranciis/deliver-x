@@ -1,12 +1,20 @@
 @import "./Theme.scss";
 
+.Parent {
+  background-color: $bg;
+  padding: 100px 0;
+}
+
 .FirstPart {
+  width: 100%;
+  max-width: 1270px;
   height: fit-content;
   display: flex;
   justify-content: space-between;
   align-content: stretch;
   gap: 15px;
   padding: 0 80px;
+  margin: 0 auto;
 
   .Left {
     width: 50%;

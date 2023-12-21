@@ -4,26 +4,28 @@ import Link from "next/link";
 
 const FifthPart = () => {
   return (
-    <div className={`${style.FifthPart}`}>
-      <div className={style.Left}>
-        <p className={style.About}>Our Journey</p>
+    <div className={style.Parent}>
+      <div className={`${style.FifthPart}`}>
+        <div className={style.Left}>
+          <p className={style.About}>Our Journey</p>
 
-        <p className={style.Our}>It has been a long but incredible journey</p>
+          <p className={style.Our}>It has been a long but incredible journey</p>
 
-        <p className={style.Sed}>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu
-          egestas morbi sem vulputate etiam facilisis pellentesque ut quis.
-        </p>
+          <p className={style.Sed}>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu
+            egestas morbi sem vulputate etiam facilisis pellentesque ut quis.
+          </p>
 
-        <Link href="">
-          <button className={style.Download}>Download app</button>
-        </Link>
-      </div>
+          <Link href="">
+            <button className={style.Download}>Download app</button>
+          </Link>
+        </div>
 
-      <div className={style.Right}>
-        {Data.map((card) => (
-          <FifthPartCard Data={card} key={card.title} />
-        ))}
+        <div className={style.Right}>
+          {Data.map((card) => (
+            <FifthPartCard Data={card} key={card.title} />
+          ))}
+        </div>
       </div>
     </div>
   );

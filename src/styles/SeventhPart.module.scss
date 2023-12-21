@@ -1,5 +1,11 @@
 @import "./Theme.scss";
 
+.Parent {
+  background-color: $bg;
+  padding: 166px 0;
+  border-bottom: 1px solid #cacaca;
+}
+
 .SeventhPart {
   height: fit-content;
   display: flex;
@@ -8,6 +14,9 @@
   align-items: center;
   gap: 28px;
   padding: 30px 80px 100px;
+  width: 100%;
+  max-width: 1270px;
+  margin: 0 auto;
 
   .Left {
     width: 100%;

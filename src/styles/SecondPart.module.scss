@@ -1,9 +1,16 @@
 @import "./Theme.scss";
 
+.Parent{
+  background-color: $bg;
+}
+
 .SecondPart {
+  width: 100%;
+  max-width: 1270px;
   display: flex;
   justify-content: space-between;
   padding: 50px 20px 100px;
+  margin: 0 auto;
 
   .Stat {
     display: flex;

@@ -1,20 +1,21 @@
 import style from "@/styles/SeventhPart.module.scss";
-import Image from "next/image";
 import SeventhPartCard, { ISeventhPartCardProps } from "./SeventhPartCard";
 
 const SeventhPart = () => {
   return (
-    <div className={style.SeventhPart}>
-      <div className={style.Left}>
-        <p className={style.About}>PRESS & NEWS</p>
+    <div className={style.Parent}>
+      <div className={style.SeventhPart}>
+        <div className={style.Left}>
+          <p className={style.About}>PRESS & NEWS</p>
 
-        <p className={style.Our}>See what the press says about Deliver X</p>
-      </div>
+          <p className={style.Our}>See what the press says about Deliver X</p>
+        </div>
 
-      <div className={style.Right}>
-        {DATA.map((card) => (
-          <SeventhPartCard Data={card} key={card.date} />
-        ))}
+        <div className={style.Right}>
+          {DATA.map((card) => (
+            <SeventhPartCard Data={card} key={card.date} />
+          ))}
+        </div>
       </div>
     </div>
   );

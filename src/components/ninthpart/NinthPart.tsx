@@ -5,10 +5,12 @@ import Available from "./Available";
 
 const NinthPart = () => {
   return (
-    <div className={styles.NinthPart}>
-      <Menu />
-      <Utility />
-      <Available />
+    <div>
+      <div className={styles.NinthPart}>
+        <Menu />
+        <Utility />
+        <Available />
+      </div>
     </div>
   );
 };
