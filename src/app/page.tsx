@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "@/styles/page.module.scss";
 import NavBar from "@/components/navbar/NavBar";
 import FirstPart from "@/components/firstpart/FirstPart";
@@ -7,6 +6,7 @@ import ThirdPart from "@/components/thirdpart/ThirdPart";
 import FourthPart from "@/components/fourthpart/FourthPart";
 import FifthPart from "@/components/fifthpart/FifthPart";
 import SixthPart from "@/components/sixthpart/SixthPart";
+import SeventhPart from "@/components/seventhpart/SeventhPart";
 
 export default function Home() {
   return (
@@ -20,6 +20,7 @@ export default function Home() {
         <FourthPart />
         <FifthPart />
         <SixthPart />
+        <SeventhPart />
       </div>
     </main>
   );

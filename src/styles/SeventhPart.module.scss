@@ -1,0 +1,91 @@
+@import "./Theme.scss";
+
+.SeventhPart {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  padding: 30px 80px 100px;
+
+  .Left {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+
+    .About {
+      color: $primary;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .Our {
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 1.227em;
+    }
+  }
+
+  .Right {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 25px;
+    flex-wrap: wrap;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+.SeventhPartCard {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  border-radius: 24px;
+  filter: drop-shadow(0 0 4px gray);
+  padding: 80px 66px;
+
+  .Logo {
+    width: 100%;
+    height: auto;
+    max-width: 190px;
+  }
+
+  .Title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.429em;
+  }
+
+  .Bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .Read {
+    font-weight: bold;
+    color: $primary;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .Date {
+    color: $grey;
+  }
+}
