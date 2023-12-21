@@ -6,6 +6,7 @@ import SecondPart from "@/components/secondpart/SecondPart";
 import ThirdPart from "@/components/thirdpart/ThirdPart";
 import FourthPart from "@/components/fourthpart/FourthPart";
 import FifthPart from "@/components/fifthpart/FifthPart";
+import SixthPart from "@/components/sixthpart/SixthPart";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <ThirdPart />
         <FourthPart />
         <FifthPart />
+        <SixthPart />
       </div>
     </main>
   );
