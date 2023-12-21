@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Deliver X",
+  title: "About - Deliver X - Webflow Ecommerce website template",
   description: "Francis Onukwu",
 };
 
