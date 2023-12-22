@@ -5,6 +5,7 @@ import Link from "next/link";
 import styles from "@/styles/NavBar.module.scss";
 import PopUp from "./PopUp";
 import { useState } from "react";
+import NavBarRWD from "./NavBarRWD";
 
 const NavBar = () => {
   const [burgerClicked, setBurgerClicked] = useState(false);
@@ -52,9 +53,7 @@ const NavBar = () => {
             </Link>
 
             <div
-              className={`${styles.Burger} ${
-                burgerClicked ? styles.Selected : styles.Burger
-              }`}
+              className={`${styles.Burger} ${burgerClicked && styles.Selected}`}
               onClick={() => setBurgerClicked((data) => !data)}
             >
               <span className={styles.One}></span>
@@ -63,6 +62,8 @@ const NavBar = () => {
           </div>
         </div>
       </nav>
+
+      <NavBarRWD burgerClicked={burgerClicked} />
     </div>
   );
 };
