@@ -7,8 +7,11 @@ const NinthPart = () => {
   return (
     <div>
       <div className={styles.NinthPart}>
-        <Menu />
-        <Utility />
+        <div className={styles.Group}>
+          <Menu />
+          <Utility />
+        </div>
+
         <Available />
       </div>
     </div>

@@ -26,6 +26,7 @@ const FirstPart = () => {
             className={style.Main}
             height={100}
             width={100}
+            quality={100}
           />
           <Image
             alt=""
