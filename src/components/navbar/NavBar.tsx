@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "@/styles/NavBar.module.scss";
+import PopUp from "./PopUp";
 
 const NavBar = () => {
   return (
@@ -24,9 +25,13 @@ const NavBar = () => {
           <Link href="">
             <p>Pricing</p>
           </Link>
-          <Link href="">
-            <p>Pages</p>
-          </Link>
+          <div className={styles.Pages}>
+            <Link href="">
+              <p>Pages</p>
+              <span>{">"}</span>
+            </Link>
+            <PopUp />
+          </div>
 
           <div className={styles.RightActions}>
             <Link href="">
