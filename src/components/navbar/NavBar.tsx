@@ -1,9 +1,14 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import styles from "@/styles/NavBar.module.scss";
 import PopUp from "./PopUp";
+import { useState } from "react";
 
 const NavBar = () => {
+  const [burgerClicked, setBurgerClicked] = useState(false);
+
   return (
     <div className={styles.Parent}>
       <nav className={styles.NavBar}>
@@ -45,6 +50,16 @@ const NavBar = () => {
             <Link href="">
               <button className={styles.Register}>Register</button>
             </Link>
+
+            <div
+              className={`${styles.Burger} ${
+                burgerClicked ? styles.Selected : styles.Burger
+              }`}
+              onClick={() => setBurgerClicked((data) => !data)}
+            >
+              <span className={styles.One}></span>
+              <span className={styles.Two}></span>
+            </div>
           </div>
         </div>
       </nav>

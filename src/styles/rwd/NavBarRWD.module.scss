@@ -1,0 +1,18 @@
+.NavBar {
+  @media screen and (max-width: 1050px) {
+    .Links > a,
+    .Pages {
+      display: none;
+    }
+
+    .Burger {
+      display: flex;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    button {
+      display: none;
+    }
+  }
+}

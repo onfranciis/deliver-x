@@ -2,7 +2,7 @@
 
 .Parent {
   width: 100%;
-  box-shadow: 0 0 20px red;
+  box-shadow: 0 0 10px black;
 }
 
 .NavBar {
@@ -87,6 +87,44 @@
       background-color: #df4b2d;
     }
   }
+
+  .Burger {
+    // width: 50px;
+    height: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    display: none;
+
+    span {
+      height: 4px;
+      width: 30px;
+      background-color: #121212;
+      border-radius: 5px;
+      display: block;
+      transition: all 0.5s;
+    }
+
+    .Two {
+      width: 20px;
+    }
+  }
+
+  .Selected {
+    .One {
+      transform: translate3d(0px, 7px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+        rotateY(0deg) rotateZ(135deg) skew(0deg, 0deg);
+      transform-style: preserve-3d;
+    }
+
+    .Two {
+      width: 30px;
+      transform: translate3d(0px, -6px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+        rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+      transform-style: preserve-3d;
+    }
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -130,3 +168,5 @@
     opacity: 1;
   }
 }
+
+@import "./rwd/NavBarRWD.module.scss";
