@@ -107,3 +107,9 @@
     }
   }
 }
+
+.FirstPart {
+  @media screen and (max-width: 700px) {
+    padding: 0 20px;
+  }
+}

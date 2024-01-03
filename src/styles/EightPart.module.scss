@@ -35,6 +35,7 @@
     justify-content: center;
     align-items: center;
     gap: 16px;
+    flex-wrap: wrap;
   }
 
   button {
@@ -78,5 +79,11 @@
     .Links {
       margin-top: 50px;
     }
+  }
+}
+
+.EightPart {
+  @media screen and (max-width: 700px) {
+    padding: 70px 20px 83px;
   }
 }

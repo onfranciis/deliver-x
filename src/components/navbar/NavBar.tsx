@@ -42,7 +42,7 @@ const NavBar = () => {
             </div>
 
             <div className={styles.RightActions}>
-              <Link href="">
+              <Link href="" className={styles.Cart}>
                 <p>Cart(0)</p>
               </Link>
 

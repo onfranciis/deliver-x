@@ -199,4 +199,10 @@
       display: none;
     }
   }
+
+  @media screen and (max-width: 500px) {
+    .Cart {
+      display: none !important;
+    }
+  }
 }
